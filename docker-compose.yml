@@ -10,3 +10,4 @@ services:
       - PYTHONUNBUFFERED=1
       - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+      

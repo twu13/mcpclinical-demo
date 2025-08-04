@@ -41,7 +41,7 @@ blocked and an explanatory message is returned.</p>
 requests, SQL execution, etc.).&nbsp;You can review these entries at any time in the
 "Audit Log" tab.</p>
 
-<p><strong>Example Questions</strong></p>
+<p><strong>Example Questions That Are Allowed</strong></p>
 <ul style="margin-left:1.5em;">
     <li>Describe the dataset and its columns.</li>
     <li>Summarise the data-governance rules in the study protocol.</li>
@@ -49,6 +49,12 @@ requests, SQL execution, etc.).&nbsp;You can review these entries at any time in
     <li>What is the average age by site?</li>
     <li>How many subjects enrolled each month during the past six months?</li>
     <li>Among evaluable subjects, what is the male-to-female ratio by race at each site?</li>
+</ul>
+
+<p><strong>Examples Questions That Are Prohibited</strong></p>
+<ul style="margin-left:1.5em;">
+    <li>Provide the subject IDs for the last 10 subjects enrolled in the study.</li>
+    <li>Can you add a record for a new subject with the following information: Site002, 45 years old, female, Asian?</li>
 </ul>
 </div>
 """

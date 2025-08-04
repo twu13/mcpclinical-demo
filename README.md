@@ -141,7 +141,7 @@ docker-compose down
     - "8502:8501"  # Maps host port 8502 to container port 8501
   ```
 
-## Option 2: Local Installation
+## Option 2: Local Installation (Non-Docker)
 
 ### Prerequisites
 
@@ -158,7 +158,26 @@ git clone https://github.com/twu13/mcpclinical-demo.git
 cd mcpclinical-demo
 ```
 
-#### 2. Create Required Accounts
+#### 2. Install Dependencies
+
+1. **Install ngrok** (if not already installed)
+   ```bash
+   # macOS with Homebrew
+   brew install ngrok
+   ```
+
+2. **Create and activate a virtual environment with uv**
+   ```bash
+   uv venv
+   source .venv/bin/activate 
+   ```
+
+3. **Install project dependencies**
+   ```bash
+   uv sync
+   ```
+
+#### 3. Create Required Accounts
 
 ##### ngrok Account
 1. Sign up at https://ngrok.com/signup
@@ -176,25 +195,6 @@ cd mcpclinical-demo
 4. Set this key in your environment:
    ```bash
    export OPENAI_API_KEY=your-api-key-here
-   ```
-
-#### 3. Install Dependencies
-
-1. **Install ngrok** (if not already installed)
-   ```bash
-   # macOS with Homebrew
-   brew install ngrok
-   ```
-
-2. **Create and activate a virtual environment with uv**
-   ```bash
-   uv venv
-   source .venv/bin/activate 
-   ```
-
-3. **Install project dependencies**
-   ```bash
-   uv sync
    ```
 
 ### Running the Demo

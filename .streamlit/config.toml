@@ -1,0 +1,23 @@
+[client]
+# Hide almost everything in the top-right *Settings* / hamburger menu so
+# users can’t switch themes or access developer controls.
+#   "minimal"  → only show items we explicitly set via st.set_page_config
+#                (we don’t set any), so the menu button disappears.
+#   "viewer"   → hide developer options but still keeps Settings.
+# We choose "minimal" to remove the theme toggle entirely.
+toolbarMode = "minimal"
+
+[theme]
+# Force the app to always use the light colour palette, regardless of the
+# visitor's OS-level dark/light preference.  Streamlit will treat this as a
+# "Custom" theme called “Light”. It becomes the default whenever the app
+# starts so users see the exact same look in both OS modes.
+base = "light"
+
+# Copy the colours that your app already uses so the custom theme faithfully
+# matches what you see in light-mode today.
+primaryColor            = "#1761a0"   # accent colour for buttons / highlights
+backgroundColor         = "#f7fafd"   # main page background
+secondaryBackgroundColor = "#ffffff"  # cards / containers / sidebar
+textColor               = "#222222"   # default text colour
+font                    = "sans serif"

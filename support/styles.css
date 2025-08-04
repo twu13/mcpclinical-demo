@@ -7,6 +7,17 @@ body {
 .stApp {
     background-color: #f7fafd;
 }
+
+/* --- Custom dark-grey top bar --- */
+header[data-testid="stHeader"] {
+    background-color: #2f2f2f !important; /* dark grey */
+    height: 32px !important;              /* small bar */
+    border-bottom: 1px solid #444 !important;
+}
+
+/* Remove default header elements spacing so content starts below bar */
+html body [data-testid="stDecoration"] { display: none; }
+
 .instructions-container {
     background-color: white;
     padding: 1.5em;

@@ -35,6 +35,7 @@ ENV PATH="/app/.venv/bin:$PATH"
 COPY *.py .
 COPY icon/ icon/
 COPY support/ support/
+COPY .streamlit/ .streamlit/
 COPY Makefile .
 COPY README.md .
 

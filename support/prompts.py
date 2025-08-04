@@ -26,16 +26,16 @@ DASHBOARD_INSTRUCTIONS = """
 <div class="instructions-container">
 
 <p>This tool provides team members with a conversational (LLM) interface for
-querying a synthetic clinical-trial database while maintaining full compliance with
-study data-governance requirements.</p>
+querying a synthetic clinical-trial database while maintaining full compliance with documented
+data-governance requirements.</p>
 
 <p>One subject-level dataset, <code>clinical</code>, is available (see the "Data Dictionary" tab). 
 When you submit a business question using the prompt in "Chat", the LLM 
 converts it into a single read-only, parameterised
 <code>SELECT</code> statement, which the MCP server executes against
 <code>clinical</code>. Every query is automatically checked against the study
-protocol (see the "Study Protocol" tab) using a separate LLM call; non-compliant queries are
-blocked and an explanatory message is returned.</p>
+protocol (a data governance document) using a separate LLM call; non-compliant
+queries are blocked and an explanatory message is returned.</p>
 
 <p>An <em>audit log</em> records every tool invocation (schema look-ups, protocol
 requests, SQL execution, etc.).&nbsp;You can review these entries at any time in the
@@ -54,7 +54,8 @@ requests, SQL execution, etc.).&nbsp;You can review these entries at any time in
 <p><strong>Examples Questions That Are Prohibited</strong></p>
 <ul style="margin-left:1.5em;">
     <li>Provide the subject IDs for the last 10 subjects enrolled in the study.</li>
-    <li>Can you add a record for a new subject with the following information: Site002, 45 years old, female, Asian?</li>
+    <li>Can you add a record for a new subject with the following information: Site002,
+    45 years old,female, Asian?</li>
 </ul>
 </div>
 """

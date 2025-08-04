@@ -1,0 +1,60 @@
+[project]
+name = "mcpclinical-demo"
+version = "0.1.0"
+description = "Technical Demo"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiosqlite==0.21.0",
+    "datetime==5.5",
+    "fastmcp==2.8.1",
+    "gradio==5.34.0",
+    "ipykernel==6.29.5",
+    "numpy==2.3.0",
+    "openai==1.87.0",
+    "openai-agents==0.0.18",
+    "pandas==2.3.0",
+    "pathlib==1.0.1",
+    "requests==2.32.4",
+    "sqlalchemy==2.0.42",
+    "streamlit==1.45.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.13",
+]
+
+[tool.ruff]
+indent-width = 4
+line-length = 100
+exclude = [                     
+    ".eggs",
+    ".git",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".pyenv",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "build",
+    "dist",
+    "venv",
+]
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle
+    "F", # Pyflakes
+    "I", # isort
+]
+fixable = ["ALL"]               
+
+[tool.ruff.format]
+quote-style = "double"             
+indent-style = "space"            
+skip-magic-trailing-comma = false  
+line-ending = "auto"              

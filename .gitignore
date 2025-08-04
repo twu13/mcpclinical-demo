@@ -1,0 +1,12 @@
+/venv
+ngrok.log
+.python-version
+clinical.db
+config.json
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/

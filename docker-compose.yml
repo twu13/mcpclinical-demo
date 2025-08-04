@@ -1,0 +1,12 @@
+
+services:
+  mcpclinical-demo:
+    build: .
+    ports:
+      - "8501:8501"  # Streamlit UI
+      - "8000:8000"  # MCP server
+      - "4040:4040"  # ngrok web interface
+    environment:
+      - PYTHONUNBUFFERED=1
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}

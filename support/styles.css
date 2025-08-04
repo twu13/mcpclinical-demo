@@ -1,0 +1,48 @@
+body {
+    background-color: #f7fafd;
+}
+.main {
+    background-color: #f7fafd;
+}
+.stApp {
+    background-color: #f7fafd;
+}
+.instructions-container {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 12px;
+    margin-bottom: 1.5em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.clinical-header {
+    color: #1761a0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.clinical-bubble-user {
+    background: #e3f0fa;
+    color: #1761a0;
+    padding: 0.7em 1em;
+    border-radius: 1em 1em 0 1em;
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+    width: fit-content;
+    max-width: 80%;
+}
+.clinical-bubble-assistant {
+    background: #f0f4f8;
+    color: #222;
+    padding: 0.7em 1em;
+    border-radius: 1em 1em 1em 0;
+    margin-bottom: 1em;
+    width: fit-content;
+    max-width: 80%;
+}
+/* Make chat input area white */
+.stTextInput > div > div > input {
+    background-color: white !important;
+}
